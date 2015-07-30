@@ -33,11 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Examples.ExtensionMethods.Program</StartupObject>
+    <StartupObject>Examples.Events.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,18 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExtensionMethods\Circle.cs" />
-    <Compile Include="ExtensionMethods\Extensions.cs" />
-    <Compile Include="ExtensionMethods\ILocated.cs" />
-    <Compile Include="ExtensionMethods\Point.cs" />
-    <Compile Include="ExtensionMethods\Program.cs" />
+    <Compile Include="06 Constructors\Program.cs" />
+    <Compile Include="08 Events\Circle.cs" />
+    <Compile Include="08 Events\Program.cs" />
+    <Compile Include="04 ExtensionMethods\Circle.cs" />
+    <Compile Include="04 ExtensionMethods\Extensions.cs" />
+    <Compile Include="04 ExtensionMethods\ILocated.cs" />
+    <Compile Include="04 ExtensionMethods\Point.cs" />
+    <Compile Include="04 ExtensionMethods\Program.cs" />
+    <Compile Include="05 Methods\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeConversions\Program.cs" />
-    <Compile Include="TypeMembers\Point.cs" />
-    <Compile Include="TypeMembers\Program.cs" />
-    <Compile Include="ValueReferenceTypes\Point.cs" />
-    <Compile Include="ValueReferenceTypes\PointStruct.cs" />
-    <Compile Include="ValueReferenceTypes\Program.cs" />
+    <Compile Include="07 Props\Circle.cs" />
+    <Compile Include="03 TypeConversions\Program.cs" />
+    <Compile Include="01 TypeMembers\Point.cs" />
+    <Compile Include="01 TypeMembers\Program.cs" />
+    <Compile Include="02 ValueReferenceTypes\Point.cs" />
+    <Compile Include="02 ValueReferenceTypes\PointStruct.cs" />
+    <Compile Include="02 ValueReferenceTypes\Program.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
