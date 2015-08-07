@@ -6,7 +6,7 @@ namespace Examples.Methods
     {
 
 
-        int Sum(int a, int b)
+        static int Sum(int a, int b)
         {
             return a + b;
         }
@@ -21,7 +21,10 @@ namespace Examples.Methods
             Error
         }
 
-        void WriteLog(string message, LogMessageType messageType, DateTime time = default(DateTime))
+        void WriteLog(
+            string message, 
+            LogMessageType messageType, 
+            DateTime time = default(DateTime))
         {
             if (time == default(DateTime))
                 time = DateTime.Now;
@@ -73,15 +76,16 @@ namespace Examples.Methods
 
         public static void Main(string[] args)
         {
-            var program = new Program();
+   
+            var c1 = Sum(2, 3);
 
-            var c1 = program.Sum(2, 3);
-
-            var c2 = program.Sum(b: 3, a: 2);
-
+            var c2 = Sum(b: 3, a: 2);
 
 
-            program.WriteLog("Hey!", LogMessageType.Info, DateTime.Today);
+
+           var program = new Program();
+
+           program.WriteLog("Hey!", LogMessageType.Info, DateTime.Today);
 
             program.WriteLog("Noooooooo!!!", LogMessageType.Error);
 
