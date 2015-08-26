@@ -11,13 +11,12 @@ namespace Restaurant.ObjectModel.Arrays
 
     public class Dish
     {
-        private string[] ingredients;
+        private string[] ingredients = new string[0];
 
         public Dish(string name, DishType type)
         {
             this.Name = name;
             this.Type = type;
-            this.ingredients = new string[0];
         }
 
         public string Name { get; set; }
