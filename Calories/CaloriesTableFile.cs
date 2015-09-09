@@ -1,8 +1,9 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace Restaurant.ObjectModel
 {
-    class CaloriesTableFile
+    class CaloriesTableFile : IDisposable
     {
         private readonly string path;
         private StreamReader reader;
@@ -33,7 +34,7 @@ namespace Restaurant.ObjectModel
             return true;
         }
 
-        public void Close()
+        public void Dispose()
         {
             if (this.reader != null)
             {
