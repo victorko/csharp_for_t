@@ -56,6 +56,12 @@
     <Compile Include="04 ExtensionMethods\Point.cs" />
     <Compile Include="04 ExtensionMethods\Program.cs" />
     <Compile Include="05 Methods\Program.cs" />
+    <Compile Include="09 OOP\Circle.cs" />
+    <Compile Include="09 OOP\IMovable.cs" />
+    <Compile Include="09 OOP\Point.cs" />
+    <Compile Include="09 OOP\Polygon.cs" />
+    <Compile Include="09 OOP\Rectangle.cs" />
+    <Compile Include="09 OOP\Shape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="07 Props\Circle.cs" />
     <Compile Include="03 TypeConversions\Program.cs" />
