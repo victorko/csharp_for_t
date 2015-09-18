@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Examples.OOP.Shape">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>09 OOP\Shape.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Examples.OOP.Circle">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAA=</HashCode>
+      <FileName>09 OOP\Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Examples.OOP.Polygon">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAAAAAAAAAAAAAACAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>09 OOP\Polygon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Examples.OOP.Rectangle">
+    <Position X="1.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>09 OOP\Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Examples.OOP.Point">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>09 OOP\Point.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
