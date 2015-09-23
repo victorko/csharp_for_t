@@ -1,0 +1,3 @@
+﻿Account,Right,AllowDeny
+Everyone,Read,Allow
+BUILTIN\Administrators,Full Control,Allow

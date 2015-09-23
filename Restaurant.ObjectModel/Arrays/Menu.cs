@@ -8,7 +8,7 @@ namespace Restaurant.ObjectModel.Arrays
 
         public void AddDish(Dish dish)
         {
-            var newLength = this.dishes.Length;
+            var newLength = this.dishes.Length + 1;
             var newDishes = new Dish[newLength];
             this.dishes.CopyTo(newDishes, 0);
             newDishes[newLength - 1] = dish;

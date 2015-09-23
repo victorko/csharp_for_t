@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.ObjectModel", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calories", "Calories\Calories.csproj", "{EDB08EE8-F068-4D4A-9200-31A646BF7DBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRepository", "Repository\DataRepository.csproj", "{2C0EC251-B753-4E9F-BEF9-B78B68F14608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleTests", "ExampleTests\ExampleTests.csproj", "{7A48F61C-29B0-4B4E-9E09-8235E72D536A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{EDB08EE8-F068-4D4A-9200-31A646BF7DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDB08EE8-F068-4D4A-9200-31A646BF7DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDB08EE8-F068-4D4A-9200-31A646BF7DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0EC251-B753-4E9F-BEF9-B78B68F14608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0EC251-B753-4E9F-BEF9-B78B68F14608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0EC251-B753-4E9F-BEF9-B78B68F14608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0EC251-B753-4E9F-BEF9-B78B68F14608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A48F61C-29B0-4B4E-9E09-8235E72D536A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A48F61C-29B0-4B4E-9E09-8235E72D536A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A48F61C-29B0-4B4E-9E09-8235E72D536A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A48F61C-29B0-4B4E-9E09-8235E72D536A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

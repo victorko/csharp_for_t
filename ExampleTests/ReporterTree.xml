@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+  <Text>Exchange Organization</Text>
+  <Children>
+    <Tree>
+      <Text>Domain Name</Text>
+    </Tree>
+    <Tree>
+      <Text>Last Collected Time</Text>
+    </Tree>
+    <Tree>
+      <Text>Exchange Server</Text>
+      <Children>
+        <Tree>
+          <Text>LDAP</Text>
+        </Tree>
+      </Children>
+    </Tree>
+  </Children>
+</Tree>

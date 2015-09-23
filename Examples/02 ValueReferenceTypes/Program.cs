@@ -15,7 +15,7 @@ namespace Examples.ValueReferenceTypes
             var pt = new Point(0, 0);
             //var dist = pt.DistTo(new Point(1,1));
 
-            var x = 10 + 2;
+            //var x = 10 + 2;
 
             var lst = new List<int> { 1, 2, 3};
             //var c = lst.Cnt();
