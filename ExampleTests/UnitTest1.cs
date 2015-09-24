@@ -11,7 +11,7 @@ namespace ExampleTests
         {
             // Arrange
             // ...
-            var tree = Settings.Repo.Read<Tree>("ReporterTree");
+            var tree = Settings.ReporterTree;
 
             // Act
             // ...
@@ -26,7 +26,7 @@ namespace ExampleTests
         {
             // Arrange
             // ...
-            var permissions = Settings.Repo.ReadMany<Permission>("SxpPermissions");
+            var permissions = Settings.SxpPermissions;
 
             // Act
             // ...

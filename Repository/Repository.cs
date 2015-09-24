@@ -5,40 +5,44 @@ namespace DataRepository
 {
     public class Repository
     {
-        private readonly List<IObjectReader<object>> readers;
+        private readonly List<IObjectReader> objectReaders;
+        private readonly List<ICollectionReader> collectionReaders;
 
         public Repository()
         {
-            this.readers = new List<IObjectReader<object>>();
+            this.objectReaders = new List<IObjectReader>();
+            this.collectionReaders = new List<ICollectionReader>();
         }
 
-        public void RegisterReader<T>(IObjectReader<T> reader) where T : class
+        public void RegisterReader(IObjectReader reader)
         {
-            this.readers.Add(reader);
+            this.objectReaders.Add(reader);
         }
 
-        public T Read<T>(string key = null) where T : class
+        public void RegisterReader(ICollectionReader reader)
         {
-            foreach (var reader in this.readers)
+            this.collectionReaders.Add(reader);
+        }
+
+        public T Read<T>(string key = null)
+        {
+            foreach (var reader in this.objectReaders)
             {
-                var typedReader = reader as IObjectReader<T>;
-                if (typedReader != null && typedReader.CanRead(key))
+                if (reader.CanRead<T>(key))
                 {
-                    return typedReader.Read(key);
+                    return reader.ReadObject<T>(key);
                 }
             }
             throw new InvalidOperationException("Where is no suitable reader for this type and key");
         }
-
-
+        
         public IEnumerable<T> ReadMany<T>(string key = null) where T : class
         {
-            foreach (var reader in this.readers)
+            foreach (var reader in this.collectionReaders)
             {
-                var typedReader = reader as IObjectReader<IEnumerable<T>>;
-                if (typedReader != null && typedReader.CanRead(key))
+                if (reader.CanRead<T>(key))
                 {
-                    return typedReader.Read(key);
+                    return reader.ReadCollection<T>(key);
                 }
             }
             throw new InvalidOperationException("Where is no suitable reader for this type and key");

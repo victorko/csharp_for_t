@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CsvFileObjectReader.cs" />
+    <Compile Include="ICollectionReader.cs" />
     <Compile Include="IObjectReader.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

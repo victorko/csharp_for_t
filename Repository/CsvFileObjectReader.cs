@@ -5,14 +5,14 @@ using System.Linq;
 
 namespace DataRepository
 {
-    public class CsvFileObjectReader<T> : IObjectReader<IEnumerable<T>>
+    public class CsvFileObjectReader : ICollectionReader
     {
-        public bool CanRead(string key)
+        public bool CanRead<T>(string key)
         {
             return File.Exists(key + ".csv");
         }
 
-        public IEnumerable<T> Read(string key)
+        public IEnumerable<T> ReadCollection<T>(string key)
         {
             using (var stream = File.OpenText(key + ".csv"))
             {

@@ -1,8 +1,9 @@
 ﻿namespace DataRepository
 {
-    public interface IObjectReader<out T>
+    public interface IObjectReader
     {
-        bool CanRead(string key);
-        T Read(string key);
+        bool CanRead<T>(string key);
+
+        T ReadObject<T>(string key);
     }
 }
